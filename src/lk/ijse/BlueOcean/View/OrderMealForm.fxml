@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1153.0" style="-fx-background-color: d9d9d9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BlueOcean.Controller.OrderMealController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="140.0" prefWidth="1280.0" style="-fx-background-color: #4B7BEC;">
+         <children>
+            <Label layoutX="333.0" layoutY="30.0" prefHeight="81.0" prefWidth="615.0" text="Reciptionist Dashboard" textAlignment="CENTER" textFill="#d9d9d9" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="14.0" layoutY="675.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #4B7BEC;" styleClass="circle" stylesheets="@../style.css" text="Back" textFill="#d9d9d9" />
+      <Label layoutX="1071.0" layoutY="140.0" prefHeight="67.0" prefWidth="38.0" style="-fx-background-color: d9d9d9;" text="Date:" textAlignment="CENTER" textFill="#4b7bec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="1109.0" layoutY="140.0" prefHeight="67.0" prefWidth="162.0" style="-fx-background-color: d9d9d9;" textAlignment="CENTER" textFill="#4b7bec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1172.0" layoutY="675.0" onAction="#btnPrintOnAction" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #4B7BEC;" styleClass="circle" stylesheets="@../style.css" text="Print Bill" textFill="#d9d9d9" />
+      <TableView layoutX="286.0" layoutY="207.0" prefHeight="434.0" prefWidth="823.0" style="-fx-background-color: #A7CAE3;" styleClass="circle2" stylesheets="@../style.css">
+         <columns>
+            <TableColumn prefWidth="273.0" style="-fx-background-color: #45aaf2;" text="Type" />
+            <TableColumn prefWidth="271.0" style="-fx-background-color: #45aaf2;" text="Package" />
+            <TableColumn minWidth="0.0" prefWidth="278.0" style="-fx-background-color: #45aaf2;" text="Price" />
+         </columns>
+      </TableView>
+      <Pane layoutX="46.0" layoutY="207.0" prefHeight="81.0" prefWidth="200.0" style="-fx-background-color: #A7CAE3;" styleClass="circle2" stylesheets="@../style.css">
+         <children>
+            <ComboBox fx:id="cmbMealType" layoutX="25.0" layoutY="25.0" prefWidth="150.0" promptText="Meal Type" style="-fx-background-color: d9d9d9;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

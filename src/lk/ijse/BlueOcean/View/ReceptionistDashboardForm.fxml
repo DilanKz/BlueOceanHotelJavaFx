@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1153.0" style="-fx-background-color: d9d9d9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BlueOcean.Controller.ReceptionistDashboardController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="140.0" prefWidth="1280.0" style="-fx-background-color: #4B7BEC;">
+         <children>
+            <Label layoutX="333.0" layoutY="30.0" prefHeight="81.0" prefWidth="615.0" text="Reciptionist Dashboard" textAlignment="CENTER" textFill="#d9d9d9" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutX="14.0" layoutY="675.0" onAction="#btnLogOutOnAction" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #4B7BEC;" styleClass="circle" stylesheets="@../style.css" text="Log Out" textFill="#d9d9d9" />
+      <TableView layoutX="371.0" layoutY="250.0" prefHeight="434.0" prefWidth="823.0" style="-fx-background-color: #A7CAE3;" styleClass="circle2" stylesheets="@../style.css">
+         <columns>
+            <TableColumn prefWidth="87.0" style="-fx-background-color: #45aaf2;" text="Room ID" />
+            <TableColumn prefWidth="178.0" style="-fx-background-color: #45aaf2;" text="Description" />
+            <TableColumn minWidth="0.0" prefWidth="113.0" style="-fx-background-color: #45aaf2;" text="Status" />
+            <TableColumn prefWidth="163.0" style="-fx-background-color: #45aaf2;" text="Customer ID" />
+            <TableColumn prefWidth="131.0" style="-fx-background-color: #45aaf2;" text="Reserve date" />
+            <TableColumn prefWidth="149.0" style="-fx-background-color: #45aaf2;" text="Reserved till date" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="24.0" layoutY="227.0" onAction="#btnBookOnAction" prefHeight="57.0" prefWidth="266.0" style="-fx-border-color: #1E1E1E; -fx-border-radius: 10;" stylesheets="@../style.css" text="Book Rooms" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="57.0" fitWidth="49.0" layoutX="36.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assests/mobile.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="24.0" layoutY="320.0" prefHeight="57.0" prefWidth="266.0" style="-fx-border-color: #1E1E1E; -fx-border-radius: 10;" stylesheets="@../style.css" text="Cancel Reservation" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="57.0" fitWidth="49.0" layoutX="36.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assests/calendar (2).png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="24.0" layoutY="410.0" prefHeight="57.0" prefWidth="266.0" style="-fx-border-color: #1E1E1E; -fx-border-radius: 10;" stylesheets="@../style.css" text="lk.ijse.BlueOcean.View Customer " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="57.0" fitWidth="49.0" layoutX="36.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assests/people.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1071.0" layoutY="140.0" prefHeight="67.0" prefWidth="38.0" style="-fx-background-color: d9d9d9;" text="Date:" textAlignment="CENTER" textFill="#4b7bec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="1109.0" layoutY="140.0" prefHeight="67.0" prefWidth="162.0" style="-fx-background-color: d9d9d9;" textAlignment="CENTER" textFill="#4b7bec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

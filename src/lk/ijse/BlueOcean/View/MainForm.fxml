@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #45aaf2;" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BlueOcean.Controller.MainFormController">
+   <children>
+      <Label layoutX="363.0" layoutY="42.0" styleClass="title-text" stylesheets="@../style.css" text="Blue Ocean Hotel" textFill="#d9d9d9">
+         <font>
+            <Font name="Serif Regular" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="278.0" layoutY="397.0" onAction="#btnAdminOnAction" prefHeight="172.0" prefWidth="171.0" styleClass="circle2" stylesheets="@../style.css" text="  " />
+      <JFXButton layoutX="832.0" layoutY="397.0" onAction="#btnRecOnAction" prefHeight="172.0" prefWidth="171.0" styleClass="circle2" stylesheets="@../style.css" text="  " />
+      <ImageView disable="true" fitHeight="147.0" fitWidth="171.0" layoutX="290.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assests/admin.png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="147.0" fitWidth="171.0" layoutX="844.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assests/receptionist.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="291.0" layoutY="599.0" text="Log As Addmin" textFill="#d9d9d9">
+         <font>
+            <Font name="Georgia" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="825.0" layoutY="599.0" text="Log As Receptionist" textFill="#d9d9d9">
+         <font>
+            <Font name="Georgia" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

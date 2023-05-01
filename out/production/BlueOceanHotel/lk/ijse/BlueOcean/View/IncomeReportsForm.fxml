@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="603.0" prefWidth="1153.0" style="-fx-background-color: d9d9d9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.BlueOcean.Controller.IncomeReportsController">
+   <children>
+      <Pane layoutX="-1.0" prefHeight="140.0" prefWidth="1286.0" style="-fx-background-color: #4B7BEC;">
+         <children>
+            <Label layoutX="405.0" layoutY="41.0" prefHeight="81.0" prefWidth="470.0" text="Admin Dashboard" textAlignment="CENTER" textFill="#d9d9d9" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="55.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="-1.0" layoutY="140.0" prefHeight="580.0" prefWidth="170.0" style="-fx-background-color: #45aaf2;">
+         <children>
+            <JFXButton layoutX="10.0" layoutY="10.0" onAction="#btnRoomsOnAction" prefHeight="81.0" prefWidth="170.0" text="Manage Rooms" textFill="#d9d9d9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="91.0" onAction="#btnMealsOnAction" prefHeight="81.0" prefWidth="170.0" text="Manage Meals" textFill="#d9d9d9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label prefHeight="79.0" prefWidth="170.0" style="-fx-background-color: d9d9d9;" text="        Income Reports" textAlignment="CENTER" textFill="#4b7bec">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="309.0" prefWidth="170.0" />
+            <JFXButton onAction="#logOutOnAction" text="Log Out" textFill="#d9d9d9" />
+         </children>
+      </VBox>
+      <Label layoutX="185.0" layoutY="140.0" prefHeight="67.0" prefWidth="58.0" style="-fx-background-color: d9d9d9;" text="Admin :" textAlignment="CENTER" textFill="#4b7bec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1075.0" layoutY="140.0" prefHeight="67.0" prefWidth="38.0" style="-fx-background-color: d9d9d9;" text="Date:" textAlignment="CENTER" textFill="#4b7bec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="1113.0" layoutY="140.0" prefHeight="67.0" prefWidth="162.0" style="-fx-background-color: d9d9d9;" textAlignment="CENTER" textFill="#4b7bec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAdminName" layoutX="243.0" layoutY="140.0" prefHeight="67.0" prefWidth="170.0" style="-fx-background-color: d9d9d9;" textAlignment="CENTER" textFill="#4b7bec">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1184.0" layoutY="679.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #4B7BEC;" styleClass="circle" stylesheets="@../style.css" text="Back" textFill="#d9d9d9" />
+      <JFXButton layoutX="349.0" layoutY="309.0" onAction="#MonthlyReport" prefHeight="280.0" prefWidth="245.0" style="-fx-background-color: #26DE81;" styleClass="circle3" stylesheets="@../style.css" text=" " />
+      <JFXButton layoutX="790.0" layoutY="309.0" onAction="#Annualeport" prefHeight="280.0" prefWidth="245.0" style="-fx-background-color: F7B731;" styleClass="circle3" stylesheets="@../style.css" text=" " />
+      <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="397.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assests/calendar (1).png" />
+         </image>
+      </ImageView>
+      <ImageView disable="true" fitHeight="150.0" fitWidth="200.0" layoutX="838.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assests/calendar.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate1" disable="true" layoutX="397.0" layoutY="499.0" prefHeight="50.0" prefWidth="150.0" text="Monthly Report" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate11" disable="true" layoutX="843.0" layoutY="499.0" prefHeight="50.0" prefWidth="140.0" text="Annual Report" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
